@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: right !important;
+}
+
+.container > h1 {
+  text-align: center !important;
+}
+
+#dateDropdown {
+  width: 20%;
+  box-shadow: none !important;
+  margin: 15px;
+  outline: none;
+  float: right;
+  background-color: #f8f8f8;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  background-color: #8a2be2;
+  background-image: linear-gradient(to bottom right, #8a2be2, #ff69b4);
+  padding: 20px;
+}
+
+h1 {
+  color: black;
+  font-size: 2.5rem;
+}
+
+.actions {
+  padding: 5px;
+  text-align: right;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card p {
+  color: grey;
+  font-size: 12px;
+}
+
+.card > p {
+  margin: 10px 10px 0 0;
+  text-align: end;
+}
+
+.other-actions {
+  display: none;
+}
+
+.card-container {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+.bi-plus-lg {
+  font-size: 2.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+.task {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding: 12px;
+  outline: none;
+  border: none;
+  resize: none;
+  height: 80%;
+  width: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+.bi-pencil {
+  color: rgb(0, 255, 0);
+  font-size: 1.3rem;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.bi-pencil:hover {
+  color: rgb(26, 215, 26);
+}
+
+.bi-trash {
+  color: #fc3a3a;
+  font-size: 1.3rem;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.bi-trash:hover {
+  color: #cf0000;
+}
+
+.bi-file-earmark-check {
+  color: rgb(0, 255, 0);
+  font-size: 1.5rem;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.bi-file-earmark-check:hover {
+  color: rgb(0, 186, 0);
+}
+
+.bi-x-lg {
+  color: #cf0000;
+  font-size: 1.5rem;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.bi-x-lg:hover {
+  color: #9a0000;
+}
+
+.bi-check2-all {
+  color: rgb(0, 255, 0);
+  font-size: 1.4rem;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.bi-check2-all:hover {
+  color: rgb(0, 186, 0);
+}
