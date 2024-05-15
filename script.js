@@ -36,8 +36,8 @@ const addCard = () => {
             <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <div class="actions" style="justify-content: end;">
-                        <i class="bi bi-file-earmark-check" onclick="addTodo();"></i>
-                        <i class="bi bi-x-lg" onclick="removeCard();"></i>
+                        <i class="bi bi-file-earmark-check" onclick="addTodo();" title="Save"></i>
+                        <i class="bi bi-x-lg" onclick="removeCard();" title="Remove"></i>
                     </div>
                     <textarea class="task"></textarea>
                 </div>
@@ -78,8 +78,8 @@ const displayTasks = () => {
                             <i class="bi bi-file-earmark-check" onclick="addTodo();"></i>
                             <p>created at: ${element.createdAt}</p>
                             <div class="other-actions">
-                                <i class="bi bi-pencil ${element.status == "done" ? "d-none" : ""}" onclick="updateTask(${element.id})"></i> <i class="bi bi-trash" onclick="deleteTask(${element.id})"></i>
-                                <i class="bi bi-check2-all ${element.status == "done" ? "d-none" : ""}" onclick="doneTask(${element.id})"></i>
+                                <i class="bi bi-pencil ${element.status == "done" ? "d-none" : ""}" onclick="updateTask(${element.id})" title="Edit"></i> <i class="bi bi-trash" onclick="deleteTask(${element.id})" title="Delete"></i>
+                                <i class="bi bi-check2-all ${element.status == "done" ? "d-none" : ""}" onclick="doneTask(${element.id})" title="Complete"></i>
                             </div>
                         </div>
                         <textarea style="${element.status == "done" ? "height: 65%" : ""}" class="task" id="${element.id}">${element.task}</textarea>
