@@ -140,6 +140,8 @@ const updateTask = (id) => {
         currentTextarea.value = '';
         currentTextarea.value = val;
         let prevEle = currentTextarea.previousElementSibling.children;
+        document.getElementsByClassName("actions")[0].style.justifyContent = "end";
+        prevEle[2].style.display = "none";
         prevEle[1].style.display = "none";
         prevEle[0].style.display = "block";
     } catch (error) {
